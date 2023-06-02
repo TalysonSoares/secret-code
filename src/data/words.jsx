@@ -1,4 +1,4 @@
-export const wordslist = {
+export const wordsList = {
     carro: ["Motor", "Porta", "Capô", "Pneu", "Antena"],
     fruta: ["Banana", "Maçã", "Kiwi", "Laranja"],
     corpo: ["Braço", "Perna", "Cérebro", "Pescoço", "Olhos"],
