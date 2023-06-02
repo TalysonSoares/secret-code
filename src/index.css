@@ -9,3 +9,20 @@ body {
     background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
     color: #fff;
 }
+
+button {
+    background-color: #057db9;
+    color: #fff;
+    height: 50px;
+    padding: 0 45px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #025179;
+}
