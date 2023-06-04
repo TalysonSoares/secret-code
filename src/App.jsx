@@ -49,6 +49,8 @@ function App() {
 
     //create an array of letters
     let wordsLetters = word.split("");
+
+    wordsLetters = wordsLetters.map((l) => l.toLowerCase());
     console.log(wordsLetters)
 
     setGameStage(stages[1].name);
