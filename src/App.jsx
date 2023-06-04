@@ -45,7 +45,11 @@ function App() {
   const startGame = () => {
     //pick word and pick category
     const { word, category } = pickWordAndCategory();
-    console.log(word, category)
+    console.log(word, category);
+
+    //create an array of letters
+    let wordsLetters = word.split("");
+    console.log(wordsLetters)
 
     setGameStage(stages[1].name);
   }
