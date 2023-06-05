@@ -90,8 +90,17 @@ function App() {
     }
   }
   
+  const clearLetterStates = () => {
+    setGuessedLetters([]);
+    setWrongLetters([]);
+    setGuesses(3)
+  }
+
   useEffect(() => {
     if (guesses <= 0) {
+      //reset all states
+      clearLetterStates();
+      
       setGameStage(stages[2].name);
     }
   }, [guesses])
