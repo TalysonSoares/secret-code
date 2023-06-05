@@ -1,6 +1,8 @@
+import { useState } from "react"
 import "./Game.css"
 
 const Game = ({ verifyLetter, pickedWord, pickedCategory, letters, guessedLetters, wrongLetters, guesses, score }) => {
+  const [letter, setLetter] = useState("")
   return (
     <div className="game">
       <p className="points">
@@ -21,7 +23,7 @@ const Game = ({ verifyLetter, pickedWord, pickedCategory, letters, guessedLetter
       <div className="letterContainer">
         <p>Tente adivinhar uma letra da palavra:</p>
         <form>
-          <input type="text" name="letter" maxLength="1" required/>
+          <input type="text" name="letter" maxLength="1" required onChange={(e) => setLetter(e.target.value)}/>
           <button>Jogar!</button>
         </form>
       </div>
