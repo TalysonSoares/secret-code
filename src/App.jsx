@@ -85,10 +85,16 @@ function App() {
       setWrongLetters((actualWrongLetter) => [
         ...actualWrongLetter, normalizedLetter
       ]);
+
+      setGuesses((actualGuesses) => actualGuesses - 1)
     }
   }
-  console.log(guessedLetters);
-  console.log(wrongLetters);
+  
+  useEffect(() => {
+    if (guesses <= 0) {
+      setGameStage(stages[2].name);
+    }
+  }, [guesses])
 
 
   // restarts the game
