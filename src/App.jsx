@@ -76,7 +76,20 @@ function App() {
       return;
     }
 
+    // push guessed Letter or remove a guess
+    if (letters.includes(normalizedLetter)) {
+      setGuessedLetters((actualGuessedLetters) => [
+        ...actualGuessedLetters, normalizedLetter
+      ]);
+    } else {
+      setWrongLetters((actualWrongLetter) => [
+        ...actualWrongLetter, normalizedLetter
+      ]);
+    }
   }
+  console.log(guessedLetters);
+  console.log(wrongLetters);
+
 
   // restarts the game
   const retry = () => {
