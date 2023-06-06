@@ -2,9 +2,9 @@
 import { useCallback, useEffect, useState } from "react";
 
 // components
-import StartScreen from "./components/StartScreen";
-import Game from "./components/Game";
-import GameOver from "./components/GameOver";
+import StartScreen from "./components/startScreen/StartScreen";
+import Game from "./components/game/Game";
+import GameOver from "./components/gameOver/GameOver";
 
 // data
 import {wordsList} from "./data/words";
