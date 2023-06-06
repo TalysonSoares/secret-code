@@ -6,11 +6,12 @@ span h2 {
     width: 450px;
     height: 450px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 @media (max-width: 478px) {
     .astronaut {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
 }
