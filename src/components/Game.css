@@ -15,6 +15,8 @@
     padding: 1.5em;
     border: 20px solid #ecfa00;
     display: flex;
+    width: auto;
+    height: auto;
 }
 
 .letter, .blankSquare {
@@ -45,4 +47,41 @@
     font-size: 2em;
     text-align: center;
     margin-right: 1em;
+}
+
+@media (max-width: 1000px) {
+    .wordContainer {
+     max-width: 600px;
+    } 
+
+    .letter, .blankSquare {
+     font-size: 55px;
+     width: 85px;
+     height: 75px;
+
+    }  
+ }
+
+@media (max-width: 768px) {
+    .wordContainer {
+        max-width: 400px;
+    }
+
+    .letter, .blankSquare {
+     font-size: 45px;
+     width: 70px;
+     height: 60px;
+    } 
+}
+
+@media (max-width: 480px) {
+    .wordContainer {
+        max-width: 300px;
+    }
+ 
+       .letter, .blankSquare {
+        font-size: 25px;
+        width: 50px;
+        height: 35px;
+       }
 }
